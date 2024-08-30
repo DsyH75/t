@@ -1,4 +1,4 @@
-name: 3newgames.yml
+name: 9codes.yml
 on:
   workflow_dispatch:
 
@@ -21,4 +21,4 @@ jobs:
 
       - name: Run the script
         run: |
-          python newgames.py
+          python script.py
