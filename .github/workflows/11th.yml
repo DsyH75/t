@@ -1,4 +1,4 @@
-name: 2patch
+name: 11codes.yml
 on:
   workflow_dispatch:
 
@@ -21,4 +21,4 @@ jobs:
 
       - name: Run the script
         run: |
-          python test.py
+          python script.py
