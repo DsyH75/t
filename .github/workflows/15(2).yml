@@ -1,10 +1,13 @@
-name: 10codes.yml
+name: 15(2)jobs
 on:
   workflow_dispatch:
 
 jobs:
   run-script:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        run: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -21,4 +24,4 @@ jobs:
 
       - name: Run the script
         run: |
-          python script.py
+          python script.py ${{ matrix.run }}
